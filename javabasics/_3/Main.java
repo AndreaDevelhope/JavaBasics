@@ -43,12 +43,12 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         // Write your code here
-        int age=24;
-        boolean haveHadLunch=false;
-        double lunchPrice=4.99;
+        int age = 24;
+        boolean haveHadLunch = false;
+        double lunchPrice = 4.99;
         System.out.print("My age is ");
         System.out.println(age);
-        System.out.print("You've asked me wether I had lunch today.. well that's ");
+        System.out.print("You've asked me whether I had lunch today.. well that's ");
         System.out.println(haveHadLunch);
         System.out.print("The lunch would cost ");
         System.out.println(lunchPrice);
