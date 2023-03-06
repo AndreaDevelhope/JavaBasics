@@ -48,7 +48,7 @@ public class Main {
         double lunchPrice=4.99;
         System.out.print("My age is ");
         System.out.println(age);
-        System.out.print("You've asked me wether i had lunch today.. well that's ");
+        System.out.print("You've asked me wether I had lunch today.. well that's ");
         System.out.println(haveHadLunch);
         System.out.print("The lunch would cost ");
         System.out.println(lunchPrice);
