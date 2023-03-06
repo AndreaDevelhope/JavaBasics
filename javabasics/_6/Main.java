@@ -38,8 +38,6 @@ public class Main {
 
         System.out.println("Max=" + Math.max(valueA , valueB));
         System.out.println("Min=" + Math.min(valueA , valueB));
-
-        // Write your code here
     }
 
     /**
@@ -50,8 +48,8 @@ public class Main {
 
         int totalMoney = 50;
         int costPerBurger = 9;
-        // Write your code here
         System.out.println("Remainder=" + totalMoney % costPerBurger);
+        System.out.println("Burgers bought=" + totalMoney / costPerBurger);  //possiamo farlo perchè i valori sono int
     }
 
     /**
