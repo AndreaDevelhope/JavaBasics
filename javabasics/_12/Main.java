@@ -76,7 +76,7 @@ public class Main {
      *    The minimum score should be 5, if a score is lower than this increase it to 5
      */
     public static double exercise2(String mealType, double weight, double expectedScore) {
-        double yourMealScore = 0;
+        double yourMealScore;
 
         switch (mealType){
             case "sandwich":
