@@ -78,30 +78,33 @@ public class Main {
      *
      *    Remember was can use ! to invert the value of a boolean, i.e. true -> false
      */
+
+    // stavo pensando a un modo per usare l'operatore OR e il NOT però mi sembrava ancora più confusionario, se potessimo usare lo switch case sarebbe tutto più chiaro
     private static void exercise3() {
         System.out.println("\nExercise 3 - Test Grader:");
         double ourTestScore = 8;
         double maxTestScore = 10;
         boolean isTestRetry = true;
         double gradePercentage = (ourTestScore / maxTestScore) * 100;
-        if (gradePercentage < 60){
-            System.out.println("F");
-        } else if (gradePercentage < 70){
-            System.out.println("D");
-        } else if (gradePercentage < 80){
-            System.out.println("C");
-        } else if (gradePercentage < 90){
-            if (isTestRetry){
-                System.out.println("C is max for retry, score is:" + gradePercentage);
-            } else {
+        if (gradePercentage < 60){                                                      // il voto è minore di 60?
+            System.out.println("F");                                                    // SI -> voto "F"
+        } else if (gradePercentage < 70){                                               // NO -> okkk è maggiore uguale di 60, ma è minore di 70?
+            System.out.println("D");                                                    // SI -> voto "D"
+        } else if (gradePercentage < 80){                                               // NO -> è maggiore uguale di 70, ma è minore di 80?
+            System.out.println("C");                                                    // SI -> voto "C"
+        } else if (gradePercentage < 90){                                               // NO -> è maggiore uguale di 80, ma è minore di 90?
+            if (isTestRetry){                                                           // SI -> ok quindi è compreso tra 80 e 90, il voto sarebbe "B", ma è un retry?
+                System.out.println("C is max for retry, score is:" + gradePercentage);  // SI -> è un retry quindi massimo voto = "C"
+            } else {                                                                    // NO -> non è un retry, voto "B"!
                 System.out.println("B");
             }
-        } else if (isTestRetry){
-            System.out.println("C is max for a retry, score is:" + gradePercentage);
-        } else {
-            System.out.println("A");
+        } else if (isTestRetry){                                                        // non è minore di 90 quindi il voto sarebbe "A", ma è un retry?
+            System.out.println("C is max for a retry, score is:" + gradePercentage);    // SI -> è un retry quindi massimo voto = "C"
+        } else {                                                                        // NO -> voto "A"
+            System.out.println("A");                                   
         }
-    }
+    }     
+   
 
 
     /**
