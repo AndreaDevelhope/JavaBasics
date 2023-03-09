@@ -31,12 +31,15 @@ public class Main {
 
         int startingScore = text.length();
 
+        yourScore = Math.min(startingScore , 20);
+
+    /**
         if (startingScore > 20){
             yourScore = 20;
         } else {
             yourScore = startingScore;
         }
-
+    */
         if (text.contains("a")){
             yourScore -= 5;
         }
@@ -84,10 +87,11 @@ public class Main {
                 break;
         }
 
-        if (yourMealScore < 5){
+        yourMealScore = Math.max(yourMealScore , 5);
+        /**if (yourMealScore < 5){
             yourMealScore = 5;
         }
-
+         */
         // End it here
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourMealScore);
