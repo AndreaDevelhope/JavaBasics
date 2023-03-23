@@ -21,8 +21,9 @@ public class Main {
         double perYearMultiplier = 1 + (averageReturnFromStockMarketIndexPercentage / 100);
         int yearsPast = 0;
         double interestGainedThisYearEuros = 0;
+        //avevo confuso il quesito, pensavo dicesse di far andare il ciclo per un massimo di 5 anni e che si sarebbe fermato prima se avesse raggiunto 15k per questo avevo usato &&
                                                                                          //condizione per 1a: while (currentInvestmentValueEuros <= 100000)
-        while (yearsPast <= 5 && currentInvestmentValueEuros <= 15000) {                 //non ho capito perchè consiglia l'utilizzo di OR ||
+        while (yearsPast <= 5 || currentInvestmentValueEuros < 15000) {                 
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
@@ -72,10 +73,10 @@ public class Main {
      *    Which would work best? Why?
      *
      * Q Example: Print out the numbers 1 to 10
-     * A Example: fori
+     * A Example: for i
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1: do while
+     * A1: for each
      *
      * Q2: We have a list of 1000 users to send emails to
      * A2: for each
@@ -84,6 +85,6 @@ public class Main {
      * A3: for i
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: while
+     * A4: do while
      */
 }
