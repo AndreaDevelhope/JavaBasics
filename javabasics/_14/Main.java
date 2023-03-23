@@ -104,7 +104,7 @@ public class Main {
         int number = 8;
         for (
                 int timesTableCurrentValue = number; // <---- Edit this line
-                timesTableCurrentValue <= Math.pow(number, 2); // <---- Edit this line
+                timesTableCurrentValue <= number * 10; // <---- Edit this line
                 timesTableCurrentValue = timesTableCurrentValue + number // <---- Edit this line
         ) {
             System.out.println(timesTableCurrentValue);
@@ -124,7 +124,7 @@ public class Main {
     private static void exercise5() {
         for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) {
             // Your fori loop here
-            for (int i = timesTableNumber; i <= Math.pow(timesTableNumber, 2); i += timesTableNumber){
+            for (int i = timesTableNumber; i <= timesTableNumber * 10; i += timesTableNumber){
                 System.out.println("Tabellina del " + timesTableNumber + " = " + i);
             }
         }
