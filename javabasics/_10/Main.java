@@ -30,7 +30,7 @@ public class Main {
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
         boolean wearingShorts = true;
 
-        if (isWarm && wearingShorts){
+        if (!(isWarm ^ wearingShorts)){
             System.out.println("Comfortable clothes");
         } else {
             System.out.println("Uncomfortable clothes");
